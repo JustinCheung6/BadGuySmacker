@@ -5,17 +5,17 @@ using UnityEngine;
 public class MovementBase : MonoBehaviour
 {
     [Tooltip("Max value player's velocity can move")]
-    [SerializeField] private float maxSpeed;
+    [SerializeField] private float maxSpeed = 5f;
     [Tooltip("Force added when player jumps")]
-    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpForce = 500f;
     [Tooltip("Gravity multiplier when character jumps (1 = normal, must be greater than 0)")]
-    [SerializeField] private float gravityMultiplier = 1f;
+    [SerializeField] private float gravityMultiplier = 2f;
     [Tooltip("Gravity multiplier when character falls (1 = normal, must be greater than 0)")]
-    [SerializeField] private float fallMultiplier = 1f;
+    [SerializeField] private float fallMultiplier = 5f;
     [Tooltip("Decides if character can move in air")]
-    [SerializeField] private bool airControl;
+    [SerializeField] private bool airControl = true;
     [Tooltip("Decides what physic layers are considered floor")]
-    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private LayerMask floorMask;
 
     private Transform xyz;
     private Rigidbody2D rb2d;
@@ -34,7 +34,7 @@ public class MovementBase : MonoBehaviour
     private void FixedUpdate()
     {
         //Check if there are colliders with groundMask specified layer, and set bool true if there is
-        Collider2D[] cols = Physics2D.OverlapCircleAll(xyz.position, groundcheckDist, groundMask);
+        Collider2D[] cols = Physics2D.OverlapCircleAll(xyz.position, groundcheckDist, floorMask);
         isGrounded = (cols.Length > 0) ? true : false;
         //Check if player is in air, gravitymultiplier is greater than 1, and velocity is positive
         if (!isGrounded && fallMultiplier >= 0f && rb2d.velocity.y > 0)

@@ -310,7 +310,7 @@ MonoBehaviour:
   gravityMultiplier: 2
   fallMultiplier: 5
   airControl: 1
-  groundMask:
+  floorMask:
     serializedVersion: 2
     m_Bits: 256
   active: 1
