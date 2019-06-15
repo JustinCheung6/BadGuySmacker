@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Abstract_HealthIntel : MonoBehaviour
+public abstract class HealthIntel_Abstract : MonoBehaviour
 {
-    protected Health owner;
+    [SerializeField] protected Health owner;
 
-    protected virtual void Awake()
-    {
-        if (owner == null)
-            owner = GetComponent<Health>();
-    }
+    // Connect to owner if script enabled
     protected virtual void OnEnable()
     {
         if (owner != null)
@@ -19,6 +15,7 @@ public abstract class Abstract_HealthIntel : MonoBehaviour
             owner.OnDeath += Death;
         }
     }
+    // Disconnect from Owner if script disabled
     protected virtual void OnDisable()
     {
         if (owner != null)
@@ -27,7 +24,10 @@ public abstract class Abstract_HealthIntel : MonoBehaviour
             owner.OnDeath -= Death;
         }
     }
+
+    //Specific Events that can be used for HealthIntel Scripts
     protected abstract void DamageTransaction(object sender, float damage);
     protected abstract void Death();
+
 
 }

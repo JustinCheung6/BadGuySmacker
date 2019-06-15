@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DamageGiver : MonoBehaviour
 {
+    [Tooltip("Amount of damage this collider does.")]
     [SerializeField] protected float damageValue = 25f;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         //Check if collided object can take damage
-        DamageTaker_Abstract taker = col.gameObject.GetComponent<DamageTaker_Abstract>();
+        Health_DamageTaker_Abstract taker = col.gameObject.GetComponent<Health_DamageTaker_Abstract>();
         if(taker != null)
         {
             //Apply damage to the character
