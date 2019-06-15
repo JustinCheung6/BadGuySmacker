@@ -14,6 +14,10 @@ public abstract class HealthIntel_Abstract : MonoBehaviour
             owner.OnDamageTransaction += DamageTransaction;
             owner.OnDeath += Death;
         }
+        else if(owner == null)
+        {
+            Debug.Log(this.gameObject.name + " is missing owner Component");
+        }
     }
     // Disconnect from Owner if script disabled
     protected virtual void OnDisable()
