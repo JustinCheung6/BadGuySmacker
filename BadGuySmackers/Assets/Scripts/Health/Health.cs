@@ -11,6 +11,7 @@ public class Health : Health_DamageTaker_Base
     [SerializeField] protected float currentHealth = 100f;
     [Tooltip("Whether or not the character is considered dead.")]
     [SerializeField] protected bool isDead = false;
+    [SerializeField] protected bool isImmune = false;
 
     //Public variables for getting info from Health Base
     public float read_maxHealth { get { return maxHealth; } }
@@ -22,11 +23,11 @@ public class Health : Health_DamageTaker_Base
     public override void TakeDamage(object sender, float damage)
     {
         //Stop function if already dead
-        if (isDead) return;
-
+        if (isDead || isImmune)
+            return;
         currentHealth -= damage;
 
-        if ((currentHealth <= 0f && !isDead) || (isDead && currentHealth != 0))
+        if (currentHealth <= 0f)
         {
             currentHealth = 0f;
             isDead = true;

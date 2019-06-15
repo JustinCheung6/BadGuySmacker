@@ -7,6 +7,9 @@ public class DamageGiver : MonoBehaviour
     [Tooltip("Amount of damage this collider does.")]
     [SerializeField] protected float damageValue = 25f;
 
+    [Tooltip("Whether or not character can do damage")]
+    public bool activated = true;
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         //Check if collided object can take damage

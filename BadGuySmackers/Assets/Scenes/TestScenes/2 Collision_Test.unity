@@ -209,9 +209,10 @@ GameObject:
   m_Component:
   - component: {fileID: 640316157}
   - component: {fileID: 640316156}
+  - component: {fileID: 640316158}
   - component: {fileID: 640316159}
   - component: {fileID: 640316155}
-  - component: {fileID: 640316158}
+  - component: {fileID: 640316160}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -313,8 +314,23 @@ MonoBehaviour:
   floorMask:
     serializedVersion: 2
     m_Bits: 256
-  active: 1
-  locked: 0
+  isActivated: 1
+  isLocked: 0
+--- !u!114 &640316160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640316154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196fa4c89e091db4d94ead62c28f9fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  isDead: 0
 --- !u!1 &689339375
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +640,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1648563765}
   - component: {fileID: 1648563764}
+  - component: {fileID: 1648563766}
+  - component: {fileID: 1648563763}
   m_Layer: 0
   m_Name: Baddie
   m_TagString: Untagged
@@ -631,6 +649,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1648563763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648563762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f822e0333511b42a715b0e3c74ffec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageValue: 25
+  activated: 1
 --- !u!61 &1648563764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -641,7 +673,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: afdae56049935b343907ac1712b9f948, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -672,3 +704,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648563766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648563762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196fa4c89e091db4d94ead62c28f9fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  isDead: 0
