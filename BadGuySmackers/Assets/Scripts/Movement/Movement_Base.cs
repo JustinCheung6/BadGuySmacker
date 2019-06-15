@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementBase : MonoBehaviour
+public class Movement_Base : MonoBehaviour
 {
     [Tooltip("Max value player's velocity can move")]
     [SerializeField] private float maxSpeed = 5f;
@@ -22,8 +22,8 @@ public class MovementBase : MonoBehaviour
     private bool isGrounded = false; //Is character on the floor
     const float groundcheckDist = 0.2f; //Distance for checking if there is floor (Circle cast)
 
-    public bool active = true; //If player allowed to move
-    public bool locked = false; //If player's velocity is locked
+    public bool isActivated = true; //If player allowed to move
+    public bool isLocked = false; //If player's velocity is locked
 
     private void Awake()
     {
@@ -48,7 +48,7 @@ public class MovementBase : MonoBehaviour
     public void Move(float move, bool jump)
     {
         //Stop function if character is disactivated
-        if (!active)
+        if (!isActivated)
             return;
         //Check if character is on the ground or if they can move in the air
         if (isGrounded || airControl)

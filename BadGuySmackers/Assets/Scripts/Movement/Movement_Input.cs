@@ -5,11 +5,11 @@ using UnityEngine;
 public class Movement_Input : MonoBehaviour
 {
     private bool jumpInput;
-    private MovementBase Base;
+    private Movement_Base Base;
 
     private void Awake()
     {
-        Base = GetComponent<MovementBase>();
+        Base = GetComponent<Movement_Base>();
     }
 
     // Read the button presses in Update so they aren't missed.
