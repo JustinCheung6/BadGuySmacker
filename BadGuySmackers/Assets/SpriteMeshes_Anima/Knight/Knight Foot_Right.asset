@@ -1,6 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8616061954778476442
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
+  m_Name: Knight Foot_Right
+  m_EditorClassIdentifier: 
+  m_ApiVersion: 4
+  m_Sprite: {fileID: -6762616127383454453, guid: f932a36d67c05644190ca2cf0adbb76b,
+    type: 3}
+  m_SharedMesh: {fileID: 7292677868551017826}
+--- !u!114 &5644727384805794783
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,18 +26,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
-  m_Name: Knight Head_Data
+  m_Name: Knight Foot_Right_Data
   m_EditorClassIdentifier: 
-  m_PivotPoint: {x: 640, y: 1180}
+  m_PivotPoint: {x: 780, y: 110}
   m_Vertices:
-  - {x: 922.0887, y: 1500.5758}
-  - {x: 960, y: 860}
-  - {x: 960.5757, y: 1460.5452}
-  - {x: 360.33066, y: 1461.9968}
-  - {x: 359.06287, y: 858.2725}
-  - {x: 318.27258, y: 1420.5436}
-  - {x: 320.5758, y: 901.1823}
-  - {x: 441.71362, y: 1503.0432}
+  - {x: 700, y: 160}
+  - {x: 860, y: 60.000004}
+  - {x: 860, y: 160}
+  - {x: 700, y: 60.000004}
   m_BoneWeights:
   - weight0: 1
     weight1: 0
@@ -55,67 +67,27 @@ MonoBehaviour:
     boneIndex1: 0
     boneIndex2: 0
     boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
   m_Edges:
-  - index1: 6
-    index2: 5
   - index1: 3
-    index2: 5
-  - index1: 6
-    index2: 4
-  - index1: 1
-    index2: 4
-  - index1: 2
     index2: 0
   - index1: 2
-    index2: 1
-  - index1: 0
-    index2: 7
+    index2: 0
   - index1: 3
-    index2: 7
+    index2: 1
+  - index1: 2
+    index2: 1
   m_Holes: []
-  m_Indices: 060000000500000007000000050000000300000007000000070000000400000006000000070000000200000001000000020000000700000000000000040000000700000001000000
+  m_Indices: 030000000000000001000000020000000100000000000000
   m_BindPoses:
   - bindPose:
-      e00: -0.00000011920929
-      e01: 1.0000001
+      e00: 0.00000011920929
+      e01: -1.0000001
       e02: 0
-      e03: 0.48726702
-      e10: -1.0000001
-      e11: -0.00000011920929
+      e03: 0.065000005
+      e10: 1.0000001
+      e11: 0.00000011920929
       e12: 0
-      e13: 0.13999987
+      e13: -0.009999993
       e20: 0
       e21: 0
       e22: 1
@@ -124,61 +96,45 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.6
-    path: BodyUpper_Bone/Head_Bone
-    name: Head_Bone
+    boneLength: 0.1
+    path: R_Leg1_Bone/R_Leg2_Bone
+    name: R_Leg2_Bone
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
-  m_Name: Knight Head
-  m_EditorClassIdentifier: 
-  m_ApiVersion: 4
-  m_Sprite: {fileID: 1763115729661884167, guid: f932a36d67c05644190ca2cf0adbb76b,
-    type: 3}
-  m_SharedMesh: {fileID: 2626666342030441982}
---- !u!43 &2626666342030441982
+--- !u!43 &7292677868551017826
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Knight Head
+  m_Name: Knight Foot_Right
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 18
+    indexCount: 6
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 8
+    vertexCount: 4
     localAABB:
-      m_Center: {x: -0.0008997917, y: 0.0010279119, z: 0}
-      m_Extent: {x: 0.5017993, y: 0.5037271, z: 0}
+      m_Center: {x: 0, y: 0.0000000037252903, z: 0}
+      m_Extent: {x: 0.125, y: 0.078125, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: -0.00000011920929
-    e01: 1.0000001
+  - e00: 0.00000011920929
+    e01: -1.0000001
     e02: 0
-    e03: 0.48726702
-    e10: -1.0000001
-    e11: -0.00000011920929
+    e03: 0.065000005
+    e10: 1.0000001
+    e11: 0.00000011920929
     e12: 0
-    e13: 0.13999987
+    e13: -0.009999993
     e20: 0
     e21: 0
     e22: 1
@@ -190,8 +146,8 @@ Mesh:
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_BonesAABB:
-  - m_Min: {x: -0.015432179, y: -0.36089975, z: 0}
-    m_Max: {x: 0.99202216, y: 0.64269894, z: 0}
+  - m_Min: {x: -0.013125017, y: -0.13500002, z: 0}
+    m_Max: {x: 0.14312503, y: 0.11500004, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -199,10 +155,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 060005000700050003000700070004000600070002000100020007000000040007000100
+  m_IndexBuffer: 030000000100020001000000
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 8
+    m_VertexCount: 4
     m_Channels:
     - stream: 0
       offset: 0
@@ -260,8 +216,8 @@ Mesh:
       offset: 16
       format: 10
       dimension: 4
-    m_DataSize: 640
-    _typelessdata: c3abe13ef63a003f000000000000000000000000000080bf0000803fde1b47b300000000000080bf0000003f000000bf000000000000000000000000000080bf0000803f2ac7893300000000000080bff33a003fa66fe03e000000000000000000000000000080bf0000803f519c523300000000000080bf48bcdfbef398e13e000000000000000000000000000080bf0000803f9fbdb8b500000000000080bfedbfe0bee5b000bf000000000000000000000000000080bf0000803f9fe1da3300000000000080bfe3b000bf536fc03e000000000000000000000000000080bf0000803f9fa6c5b400000000000080bf138affbedd0ddfbe000000000000000000000000000080bf0000803f80f51e3500000000000080bf0da19ebea037013f000000000000000000000000000080bf0000803f27d3fd3200000000000080bff16a383f943f763f0000403fd2200d3f7a1d403fe1ad6f3fdc21903eddea6f3f0aa08f3e40d80c3f3a9e7e3e671d693ff73a803ee7e2133f7aafb03e3ca7763f0000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
+    m_DataSize: 320
+    _typelessdata: 000000be0000a03d000000000000000000000000000080bf0000803f0000000000000000000080bf0000003effff9fbd000000000000000000000000000080bf0000803f0000000000000000000080bf0000003e0000a03d000000000000000000000000000080bf0000803f0000000000000000000080bf000000beffff9fbd000000000000000000000000000080bf0000803f0000000000000000000080bf00000c3f210dd23d00002c3fda891d3d00002c3f210dd23d00000c3fda891d3d0000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -315,8 +271,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -0.0008997917, y: 0.0010279119, z: 0}
-    m_Extent: {x: 0.5017993, y: 0.5037271, z: 0}
+    m_Center: {x: 0, y: 0.0000000037252903, z: 0}
+    m_Extent: {x: 0.125, y: 0.078125, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 

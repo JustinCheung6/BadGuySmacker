@@ -1,12 +1,98 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-7764565622144685977
+--- !u!114 &-8667729119112460070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
+  m_Name: Knight Leg_Left_Data
+  m_EditorClassIdentifier: 
+  m_PivotPoint: {x: 560, y: 280}
+  m_Vertices:
+  - {x: 480, y: 360}
+  - {x: 640, y: 200.00002}
+  - {x: 640, y: 360}
+  - {x: 480, y: 200.00002}
+  m_BoneWeights:
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  m_Edges:
+  - index1: 3
+    index2: 0
+  - index1: 2
+    index2: 0
+  - index1: 3
+    index2: 1
+  - index1: 2
+    index2: 1
+  m_Holes: []
+  m_Indices: 030000000000000001000000020000000100000000000000
+  m_BindPoses:
+  - bindPose:
+      e00: 0.012551489
+      e01: -0.99992144
+      e02: 0
+      e03: 0.03987128
+      e10: 0.99992144
+      e11: 0.012551489
+      e12: 0
+      e13: -0.010501198
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.13500011
+    path: L_Leg1_Bone
+    name: L_Leg1_Bone
+    color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
+  m_Blendshapes: []
+--- !u!43 &-8301863588315469060
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Knight ArmPiece
+  m_Name: Knight Leg_Left
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17,22 +103,22 @@ Mesh:
     firstVertex: 0
     vertexCount: 4
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.09375, y: 0.125, z: 0}
+      m_Center: {x: 0, y: 0.000000011175871, z: 0}
+      m_Extent: {x: 0.125, y: 0.124999985, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 0.00000011920929
-    e01: -1.0000001
+  - e00: 0.012551489
+    e01: -0.99992144
     e02: 0
-    e03: 0.0809999
-    e10: 1.0000001
-    e11: 0.00000011920929
+    e03: 0.03987128
+    e10: 0.99992144
+    e11: 0.012551489
     e12: 0
-    e13: -0.010000118
+    e13: -0.010501198
     e20: 0
     e21: 0
     e22: 1
@@ -44,8 +130,8 @@ Mesh:
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_BonesAABB:
-  - m_Min: {x: -0.044000126, y: -0.10375015, z: 0}
-    m_Max: {x: 0.20599994, y: 0.08374991, z: 0}
+  - m_Min: {x: -0.08668785, y: -0.13706031, z: 0}
+    m_Max: {x: 0.16643037, y: 0.116057925, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -115,7 +201,7 @@ Mesh:
       format: 10
       dimension: 4
     m_DataSize: 320
-    _typelessdata: 0000c0bd0000003e000000000000000000000000000080bf0000803f0000000000000000000080bf0000c03d000000be000000000000000000000000000080bf0000803f0000000000000000000080bf0000c03d0000003e000000000000000000000000000080bf0000803f0000000000000000000080bf0000c0bd000000be000000000000000000000000000080bf0000803f0000000000000000000080bf0000a03d5cbee53e0000303e143bb13e0000303e5cbee53e0000a03d143bb13e0000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
+    _typelessdata: 000000be0000003e000000000000000000000000000080bf0000803f0000000000000000000080bf0000003efdffffbd000000000000000000000000000080bf0000803f0000000000000000000080bf0000003e0000003e000000000000000000000000000080bf0000803f0000000000000000000080bf000000befdffffbd000000000000000000000000000080bf0000803f0000000000000000000080bf0000c03ec54e6c3e0000003f3548033e0000003fc54e6c3e0000c03e3548033e0000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -169,8 +255,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.09375, y: 0.125, z: 0}
+    m_Center: {x: 0, y: 0.000000011175871, z: 0}
+    m_Extent: {x: 0.125, y: 0.124999985, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -191,94 +277,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
-  m_Name: Knight ArmPiece
+  m_Name: Knight Leg_Left
   m_EditorClassIdentifier: 
   m_ApiVersion: 4
-  m_Sprite: {fileID: 194885430802617069, guid: f932a36d67c05644190ca2cf0adbb76b, type: 3}
-  m_SharedMesh: {fileID: -7764565622144685977}
---- !u!114 &8446346076050429767
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
-  m_Name: Knight ArmPiece_Data
-  m_EditorClassIdentifier: 
-  m_PivotPoint: {x: 160, y: 620}
-  m_Vertices:
-  - {x: 100, y: 700}
-  - {x: 220, y: 540}
-  - {x: 220, y: 700}
-  - {x: 100, y: 540}
-  m_BoneWeights:
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  - weight0: 1
-    weight1: 0
-    weight2: 0
-    weight3: 0
-    boneIndex0: 0
-    boneIndex1: 0
-    boneIndex2: 0
-    boneIndex3: 0
-  m_Edges:
-  - index1: 3
-    index2: 0
-  - index1: 2
-    index2: 0
-  - index1: 3
-    index2: 1
-  - index1: 2
-    index2: 1
-  m_Holes: []
-  m_Indices: 030000000000000001000000020000000100000000000000
-  m_BindPoses:
-  - bindPose:
-      e00: 0.00000011920929
-      e01: -1.0000001
-      e02: 0
-      e03: 0.0809999
-      e10: 1.0000001
-      e11: 0.00000011920929
-      e12: 0
-      e13: -0.010000118
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    boneLength: 0.17
-    path: BodyUpper_Bone/FrontShoulder_Bone/FrontArm_Bone
-    name: FrontArm_Bone
-    color: {r: 1, g: 0, b: 0, a: 1}
-    zOrder: 0
-  m_Blendshapes: []
+  m_Sprite: {fileID: 26171072018629001, guid: f932a36d67c05644190ca2cf0adbb76b, type: 3}
+  m_SharedMesh: {fileID: -8301863588315469060}

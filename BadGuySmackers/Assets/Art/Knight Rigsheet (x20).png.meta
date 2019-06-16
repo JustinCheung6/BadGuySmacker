@@ -167,10 +167,10 @@ TextureImporter:
         serializedVersion: 2
         x: 394.26633
         y: 414.52145
-        width: 491.52725
-        height: 350.47855
+        width: 491.87637
+        height: 350.6304
       alignment: 9
-      pivot: {x: 0.49993902, y: 0.5006827}
+      pivot: {x: 0.4995842, y: 0.50046587}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,10 +188,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1035
         y: 555
-        width: 130
+        width: 130.6886
         height: 170
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.4973655, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: Knight ArmPiece
       rect:
         serializedVersion: 2
-        x: 95
-        y: 535
-        width: 130
-        height: 170
+        x: 94.38829
+        y: 529.81714
+        width: 131.72023
+        height: 175.18286
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49811414, y: 0.51479274}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,6 +384,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636962538810511908
+  userData: 636962812619367082
   assetBundleName: 
   assetBundleVariant: 

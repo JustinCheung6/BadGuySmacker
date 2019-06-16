@@ -28,7 +28,7 @@ Mesh:
   - e00: 0.00000011920929
     e01: -1.0000001
     e02: 0
-    e03: 0.10099991
+    e03: 0.17099993
     e10: 1.0000001
     e11: 0.00000011920929
     e12: 0
@@ -44,8 +44,8 @@ Mesh:
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_BonesAABB:
-  - m_Min: {x: -0.024000168, y: -0.13500017, z: 0}
-    m_Max: {x: 0.22681423, y: 0.114999905, z: 0}
+  - m_Min: {x: 0.045999855, y: -0.13500017, z: 0}
+    m_Max: {x: 0.29681426, y: 0.114999905, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
       e00: 0.00000011920929
       e01: -1.0000001
       e02: 0
-      e03: 0.10099991
+      e03: 0.17099993
       e10: 1.0000001
       e11: 0.00000011920929
       e12: 0
@@ -320,9 +320,9 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.1
-    path: BodyUpper_Bone/FrontShoulder_Bone/FrontArm_Bone/FrontHand_Bone
-    name: FrontHand_Bone
+    boneLength: 0.17
+    path: Body2_Bone/F_Arm1_Bone/F_Arm2_Bone
+    name: F_Arm2_Bone
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []

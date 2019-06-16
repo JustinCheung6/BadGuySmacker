@@ -1,22 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
-  m_Name: Knight Foot_Right
-  m_EditorClassIdentifier: 
-  m_ApiVersion: 4
-  m_Sprite: {fileID: -6762616127383454453, guid: f932a36d67c05644190ca2cf0adbb76b,
-    type: 3}
-  m_SharedMesh: {fileID: 7292677868551017826}
---- !u!114 &5644727384805794783
+--- !u!114 &-773871977359582769
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26,14 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e715ea371f114f4a8d2584ad476634d, type: 3}
-  m_Name: Knight Foot_Right_Data
+  m_Name: Knight ShoulderPiece_Back_Data
   m_EditorClassIdentifier: 
-  m_PivotPoint: {x: 780, y: 110}
+  m_PivotPoint: {x: 1100.5, y: 860}
   m_Vertices:
-  - {x: 700, y: 160}
-  - {x: 860, y: 60.000004}
-  - {x: 860, y: 160}
-  - {x: 700, y: 60.000004}
+  - {x: 1162, y: 960.00006}
+  - {x: 1201.3125, y: 820.1873}
+  - {x: 1200, y: 922}
+  - {x: 1141.5626, y: 759.5626}
+  - {x: 1078, y: 760}
+  - {x: 1018, y: 960.00006}
+  - {x: 1019.31244, y: 820.00006}
+  - {x: 1001, y: 941.99994}
+  - {x: 999.68774, y: 859.1874}
   m_BoneWeights:
   - weight0: 1
     weight1: 0
@@ -67,27 +56,77 @@ MonoBehaviour:
     boneIndex1: 0
     boneIndex2: 0
     boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
   m_Edges:
-  - index1: 3
-    index2: 0
+  - index1: 8
+    index2: 7
+  - index1: 5
+    index2: 7
+  - index1: 8
+    index2: 6
+  - index1: 0
+    index2: 5
+  - index1: 4
+    index2: 6
   - index1: 2
     index2: 0
   - index1: 3
-    index2: 1
+    index2: 4
+  - index1: 1
+    index2: 3
   - index1: 2
     index2: 1
   m_Holes: []
-  m_Indices: 030000000000000001000000020000000100000000000000
+  m_Indices: 000000000800000005000000080000000700000005000000000000000600000008000000010000000300000004000000000000000200000006000000020000000100000006000000040000000600000001000000
   m_BindPoses:
   - bindPose:
       e00: 0.00000011920929
       e01: -1.0000001
       e02: 0
-      e03: 0.065000005
+      e03: 0.020999946
       e10: 1.0000001
       e11: 0.00000011920929
       e12: 0
-      e13: -0.009999993
+      e13: -0.007999941
       e20: 0
       e21: 0
       e22: 1
@@ -96,31 +135,47 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.1
-    path: RightLeg_Bone/RightFoot_Bone
-    name: RightFoot_Bone
+    boneLength: 0.21
+    path: Body2_Bone/B_Arm1_Bone
+    name: B_Arm1_Bone
     color: {r: 1, g: 0, b: 0, a: 1}
     zOrder: 0
   m_Blendshapes: []
---- !u!43 &7292677868551017826
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10c0be6d28fe4d539c4a39822fe301c, type: 3}
+  m_Name: Knight ShoulderPiece_Back
+  m_EditorClassIdentifier: 
+  m_ApiVersion: 4
+  m_Sprite: {fileID: -4087969813290606523, guid: f932a36d67c05644190ca2cf0adbb76b,
+    type: 3}
+  m_SharedMesh: {fileID: 7479366545921725085}
+--- !u!43 &7479366545921725085
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Knight Foot_Right
+  m_Name: Knight ShoulderPiece_Back
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 6
+    indexCount: 21
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 4
+    vertexCount: 9
     localAABB:
-      m_Center: {x: 0, y: 0.0000000037252903, z: 0}
-      m_Extent: {x: 0.125, y: 0.078125, z: 0}
+      m_Center: {x: 0.0000001937151, y: -0.00034165382, z: 0}
+      m_Extent: {x: 0.15751934, y: 0.15659174, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -130,11 +185,11 @@ Mesh:
   - e00: 0.00000011920929
     e01: -1.0000001
     e02: 0
-    e03: 0.065000005
+    e03: 0.020999946
     e10: 1.0000001
     e11: 0.00000011920929
     e12: 0
-    e13: -0.009999993
+    e13: -0.007999941
     e20: 0
     e21: 0
     e22: 1
@@ -146,8 +201,8 @@ Mesh:
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
   m_BonesAABB:
-  - m_Min: {x: -0.013125017, y: -0.13500002, z: 0}
-    m_Max: {x: 0.14312503, y: 0.11500004, z: 0}
+  - m_Min: {x: -0.13525018, y: -0.1655191, z: 0}
+    m_Max: {x: 0.17793337, y: 0.1495196, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -155,10 +210,10 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 030000000100020001000000
+  m_IndexBuffer: 000008000500080007000500000006000800010003000400000002000600020001000600040006000100
   m_VertexData:
     serializedVersion: 3
-    m_VertexCount: 4
+    m_VertexCount: 9
     m_Channels:
     - stream: 0
       offset: 0
@@ -216,8 +271,8 @@ Mesh:
       offset: 16
       format: 10
       dimension: 4
-    m_DataSize: 320
-    _typelessdata: 000000be0000a03d000000000000000000000000000080bf0000803f0000000000000000000080bf0000003effff9fbd000000000000000000000000000080bf0000803f0000000000000000000080bf0000003e0000a03d000000000000000000000000000080bf0000803f0000000000000000000080bf000000beffff9fbd000000000000000000000000000080bf0000803f0000000000000000000080bf00000c3f210dd23d00002c3fda891d3d00002c3f210dd23d00000c3fda891d3d0000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
+    m_DataSize: 736
+    _typelessdata: cdccc43d0600203e000000000000000000000000000080bf0000803f5f64c23400000000000080bfcd4c213e1acd7ebd000000000000000000000000000080bf0000803fabec10b400000000000080bf33331f3e6666c63d000000000000000000000000000080bf0000803fd9742e3400000000000080bf8066833d26b320be000000000000000000000000000080bf0000803f79e3e6b400000000000080bf000010bd000020be000000000000000000000000000080bf0000803fb8cde3b300000000000080bf000004be0600203e000000000000000000000000000080bf0000803f9e90bdb300000000000080bf6de601bee6ff7fbd000000000000000000000000000080bf0000803f4624fab200000000000080bf33331fbe2d33033e000000000000000000000000000080bf0000803fea5b42b600000000000080bfb34c21becd6ca6ba000000000000000000000000000080bf0000803fd00472b300000000000080bf00000000000000006766683fda891d3f3343703f4898063f0000703f754d173f0250643fd84af93e9a99573f976ff93e9a994b3fda891d3fccdc4b3f6a90063f3333483fa9951a3f03f0473faffe0c3f00000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -271,8 +326,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0.0000000037252903, z: 0}
-    m_Extent: {x: 0.125, y: 0.078125, z: 0}
+    m_Center: {x: 0.0000001937151, y: -0.00034165382, z: 0}
+    m_Extent: {x: 0.15751934, y: 0.15659174, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
