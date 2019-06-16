@@ -123,12 +123,12 @@ TextureImporter:
       name: Knight Head
       rect:
         serializedVersion: 2
-        x: 320
-        y: 860
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 313.27258
+        y: 853.2725
+        width: 652.3031
+        height: 654.7707
+      alignment: 9
+      pivot: {x: 0.50088286, y: 0.49899527}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: Knight ShoulderPiece_Back
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 760
-        width: 199
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 994.68774
+        y: 754.5626
+        width: 211.62476
+        height: 210.43744
+      alignment: 9
+      pivot: {x: 0.4999994, y: 0.501039}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Knight Body
       rect:
         serializedVersion: 2
-        x: 400
-        y: 420
-        width: 480
-        height: 340
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 394.26633
+        y: 414.52145
+        width: 491.52725
+        height: 350.47855
+      alignment: 9
+      pivot: {x: 0.49993902, y: 0.5006827}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,11 +186,11 @@ TextureImporter:
       name: Knight ArmPiece_Back
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 560
-        width: 120
-        height: 160
-      alignment: 0
+        x: 1035
+        y: 555
+        width: 130
+        height: 170
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: Knight Hand_Back
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 360
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1014.9533
+        y: 354.55222
+        width: 170.71002
+        height: 170.44778
+      alignment: 9
+      pivot: {x: 0.4981939, y: 0.5013135}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Knight ShoulderPiece
       rect:
         serializedVersion: 2
-        x: 60
-        y: 760
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 54.631805
+        y: 753.89545
+        width: 211.10461
+        height: 211.4729
+      alignment: 9
+      pivot: {x: 0.49912786, y: 0.50174063}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,11 +249,11 @@ TextureImporter:
       name: Knight ArmPiece
       rect:
         serializedVersion: 2
-        x: 100
-        y: 540
-        width: 120
-        height: 160
-      alignment: 0
+        x: 95
+        y: 535
+        width: 130
+        height: 170
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: Knight Hand
       rect:
         serializedVersion: 2
-        x: 80
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 75
+        y: 314.47885
+        width: 170.00002
+        height: 170.52118
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.501528}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: Knight Leg_Left
       rect:
         serializedVersion: 2
-        x: 480
-        y: 200
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 475
+        y: 195.00002
+        width: 170
+        height: 169.99998
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Knight Leg_Right
       rect:
         serializedVersion: 2
-        x: 700
-        y: 200
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 695
+        y: 195.00002
+        width: 170
+        height: 169.99998
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: Knight Foot_Left
       rect:
         serializedVersion: 2
-        x: 480
-        y: 60
-        width: 160
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 475
+        y: 55.000004
+        width: 170
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Knight Foot_Right
       rect:
         serializedVersion: 2
-        x: 700
-        y: 60
-        width: 160
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 695
+        y: 55.000004
+        width: 170
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,6 +384,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636962405710401286
   assetBundleName: 
   assetBundleVariant: 
