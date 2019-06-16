@@ -130,7 +130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9188074}
   - component: {fileID: 9188077}
-  - component: {fileID: 9188076}
   - component: {fileID: 9188075}
   m_Layer: 0
   m_Name: Knight Hand
@@ -153,8 +152,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &9188075
-MeshRenderer:
+--- !u!137 &9188075
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -190,14 +189,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 6
---- !u!33 &9188076
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9188073}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1210112076}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1210112076}
+  m_AABB:
+    m_Center: {x: 0.10140699, y: -0.010000374, z: 0}
+    m_Extent: {x: 0.12540722, y: 0.12500006, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &9188077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +220,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 6
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1210112076}
 --- !u!1 &140711712
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 324321793}
   - component: {fileID: 324321796}
-  - component: {fileID: 324321795}
   - component: {fileID: 324321794}
   m_Layer: 0
   m_Name: Knight Body
@@ -281,8 +285,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &324321794
-MeshRenderer:
+--- !u!137 &324321794
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -318,14 +322,20 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 4
---- !u!33 &324321795
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324321792}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 854824828}
+  - {fileID: 1424476097}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 854824828}
+  m_AABB:
+    m_Center: {x: 0.24462622, y: 0.13995323, z: 0}
+    m_Extent: {x: 0.26599902, y: 0.3761933, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &324321796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +354,9 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 4
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 854824828}
+  - {fileID: 1424476097}
 --- !u!1 &382445690
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99197686, b: 0, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -402,7 +414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 437981138}
   - component: {fileID: 437981141}
-  - component: {fileID: 437981140}
   - component: {fileID: 437981139}
   m_Layer: 0
   m_Name: Knight Leg_Right
@@ -425,8 +436,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &437981139
-MeshRenderer:
+--- !u!137 &437981139
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -462,14 +473,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 3
---- !u!33 &437981140
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437981137}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1095908496}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1095908496}
+  m_AABB:
+    m_Center: {x: 0.040000007, y: -0.009999976, z: 0}
+    m_Extent: {x: 0.12500004, y: 0.12500006, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &437981141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +504,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 3
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1095908496}
 --- !u!1 &481083167
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +517,7 @@ GameObject:
   - component: {fileID: 481083168}
   - component: {fileID: 481083169}
   m_Layer: 0
-  m_Name: FrontArm_Hand
+  m_Name: BackHand_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.09604788, b: 1, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -546,7 +563,6 @@ GameObject:
   m_Component:
   - component: {fileID: 523569636}
   - component: {fileID: 523569639}
-  - component: {fileID: 523569638}
   - component: {fileID: 523569637}
   m_Layer: 0
   m_Name: Knight ShoulderPiece
@@ -569,8 +585,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &523569637
-MeshRenderer:
+--- !u!137 &523569637
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -606,14 +622,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 6
---- !u!33 &523569638
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523569635}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1418247518}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1418247518}
+  m_AABB:
+    m_Center: {x: 0.021574974, y: -0.009712651, z: 0}
+    m_Extent: {x: 0.15740077, y: 0.15711303, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &523569639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,7 +653,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 6
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1418247518}
 --- !u!1 &640316154
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +782,6 @@ GameObject:
   m_Component:
   - component: {fileID: 681687452}
   - component: {fileID: 681687455}
-  - component: {fileID: 681687454}
   - component: {fileID: 681687453}
   m_Layer: 0
   m_Name: Knight Foot_Right
@@ -783,8 +804,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &681687453
-MeshRenderer:
+--- !u!137 &681687453
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -820,14 +841,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 4
---- !u!33 &681687454
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681687451}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 382445691}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 382445691}
+  m_AABB:
+    m_Center: {x: 0.06500001, y: -0.00999999, z: 0}
+    m_Extent: {x: 0.078125045, y: 0.12500006, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &681687455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,7 +872,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 4
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 382445691}
 --- !u!1 &689339375
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +964,7 @@ GameObject:
   - component: {fileID: 783805190}
   - component: {fileID: 783805191}
   m_Layer: 0
-  m_Name: FrontArm_Arm
+  m_Name: FrontArm_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -970,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Length: 0.17
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1042,7 +1069,6 @@ GameObject:
   m_Component:
   - component: {fileID: 851297668}
   - component: {fileID: 851297671}
-  - component: {fileID: 851297670}
   - component: {fileID: 851297669}
   m_Layer: 0
   m_Name: Knight Foot_Left
@@ -1065,8 +1091,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &851297669
-MeshRenderer:
+--- !u!137 &851297669
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1102,14 +1128,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 4
---- !u!33 &851297670
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851297667}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1651132854}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1651132854}
+  m_AABB:
+    m_Center: {x: 0.065, y: -0.010000274, z: 0}
+    m_Extent: {x: 0.07812503, y: 0.12500006, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &851297671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,7 +1159,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 4
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1651132854}
 --- !u!1 &854824827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1172,7 @@ GameObject:
   - component: {fileID: 854824828}
   - component: {fileID: 854824829}
   m_Layer: 0
-  m_Name: Body_Lower_Bone
+  m_Name: BodyLower_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1348,7 +1380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99197686, b: 0, a: 1}
   m_Length: 0.135
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1362,7 +1394,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1172078814}
   - component: {fileID: 1172078817}
-  - component: {fileID: 1172078816}
   - component: {fileID: 1172078815}
   m_Layer: 0
   m_Name: Knight Hand_Back
@@ -1385,8 +1416,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1172078815
-MeshRenderer:
+--- !u!137 &1172078815
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1422,14 +1453,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 2
---- !u!33 &1172078816
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172078813}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 481083168}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 481083168}
+  m_AABB:
+    m_Center: {x: 0.11134978, y: -0.0075183623, z: 0}
+    m_Extent: {x: 0.1253499, y: 0.12555477, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1172078817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,7 +1484,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 2
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 481083168}
 --- !u!1 &1210112075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1497,7 @@ GameObject:
   - component: {fileID: 1210112076}
   - component: {fileID: 1210112077}
   m_Layer: 0
-  m_Name: FrontArm_Hand
+  m_Name: FrontHand_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,7 +1511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210112075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0, z: 0}
+  m_LocalPosition: {x: 0.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 783805190}
@@ -1492,7 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1540,7 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.02666688, g: 1, b: 0, a: 1}
   m_Length: 0.135
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1554,7 +1591,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1349387097}
   - component: {fileID: 1349387100}
-  - component: {fileID: 1349387099}
   - component: {fileID: 1349387098}
   m_Layer: 0
   m_Name: Knight ShoulderPiece_Back
@@ -1577,8 +1613,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1349387098
-MeshRenderer:
+--- !u!137 &1349387098
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1614,14 +1650,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 0
---- !u!33 &1349387099
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349387096}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1951828374}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1951828374}
+  m_AABB:
+    m_Center: {x: 0.021341473, y: -0.007999748, z: 0}
+    m_Extent: {x: 0.15659182, y: 0.1575194, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1349387100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,7 +1681,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 0
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1951828374}
 --- !u!1 &1418247517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,7 +1694,7 @@ GameObject:
   - component: {fileID: 1418247518}
   - component: {fileID: 1418247519}
   m_Layer: 0
-  m_Name: FrontArm_Shoulder
+  m_Name: FrontShoulder_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,7 +1708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418247517}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.32, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0.32, y: 0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 783805190}
@@ -1685,7 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1700,7 +1742,7 @@ GameObject:
   - component: {fileID: 1424476097}
   - component: {fileID: 1424476098}
   m_Layer: 0
-  m_Name: Body_Upper_Bone
+  m_Name: BodyUpper_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1749,7 +1791,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1577643995}
   - component: {fileID: 1577643998}
-  - component: {fileID: 1577643997}
   - component: {fileID: 1577643996}
   m_Layer: 0
   m_Name: Knight ArmPiece_Back
@@ -1772,8 +1813,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1577643996
-MeshRenderer:
+--- !u!137 &1577643996
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1809,14 +1850,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 1
---- !u!33 &1577643997
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577643994}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 2054034369}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 2054034369}
+  m_AABB:
+    m_Center: {x: 0.08099988, y: -0.007999957, z: 0}
+    m_Extent: {x: 0.12500006, y: 0.09375005, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1577643998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1835,7 +1881,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 1
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 2054034369}
 --- !u!1 &1651132853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,7 +1926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.02666688, g: 1, b: 0, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -1893,7 +1940,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1669741488}
   - component: {fileID: 1669741491}
-  - component: {fileID: 1669741490}
   - component: {fileID: 1669741489}
   m_Layer: 0
   m_Name: Knight ArmPiece
@@ -1916,8 +1962,8 @@ Transform:
   m_Father: {fileID: 1073972133}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1669741489
-MeshRenderer:
+--- !u!137 &1669741489
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1953,14 +1999,19 @@ MeshRenderer:
   m_SortingLayerID: -1031869803
   m_SortingLayer: 1
   m_SortingOrder: 5
---- !u!33 &1669741490
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669741487}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 783805190}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 783805190}
+  m_AABB:
+    m_Center: {x: 0.08099988, y: -0.010000236, z: 0}
+    m_Extent: {x: 0.12500006, y: 0.09375005, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1669741491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,7 +2030,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 5
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 783805190}
 --- !u!1 &1861015359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2128,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 3
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1220328306}
 --- !u!1 &1951828373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,7 +2141,7 @@ GameObject:
   - component: {fileID: 1951828374}
   - component: {fileID: 1951828375}
   m_Layer: 0
-  m_Name: BackArm_Shoulder
+  m_Name: BackShoulder_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2121,7 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.09604788, b: 1, a: 1}
   m_Length: 0.1
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
@@ -2221,7 +2274,8 @@ MonoBehaviour:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: -1031869803
   m_SortingOrder: 5
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 2030874549}
 --- !u!1 &2030874548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2287,7 @@ GameObject:
   - component: {fileID: 2030874549}
   - component: {fileID: 2030874550}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Head_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2266,7 +2320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.98
+  m_Length: 0.6
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &2054034368
@@ -2280,7 +2334,7 @@ GameObject:
   - component: {fileID: 2054034369}
   - component: {fileID: 2054034370}
   m_Layer: 0
-  m_Name: FrontArm_Arm
+  m_Name: BackArm_Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2313,7 +2367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.09604788, b: 1, a: 1}
   m_Length: 0.17
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
