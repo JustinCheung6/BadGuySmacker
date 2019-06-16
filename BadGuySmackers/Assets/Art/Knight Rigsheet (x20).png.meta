@@ -83,7 +83,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -291,12 +291,12 @@ TextureImporter:
       name: Knight Leg_Left
       rect:
         serializedVersion: 2
-        x: 475
-        y: 195.00002
-        width: 170
-        height: 169.99998
+        x: 473.1685
+        y: 94.42392
+        width: 173.99997
+        height: 274
       alignment: 9
-      pivot: {x: 0.5, y: 0.49999997}
+      pivot: {x: 0.49903175, y: 0.4948031}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Knight Leg_Right
       rect:
         serializedVersion: 2
-        x: 695
-        y: 195.00002
-        width: 170
-        height: 169.99998
+        x: 693
+        y: 93
+        width: 174
+        height: 274
       alignment: 9
-      pivot: {x: 0.5, y: 0.49999997}
+      pivot: {x: 0.5, y: 0.49999988}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,48 +325,6 @@ TextureImporter:
       bones: []
       spriteID: ecb88181a3937054383ab0a47612a1cc
       internalID: -5370344820740298803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight Foot_Left
-      rect:
-        serializedVersion: 2
-        x: 475
-        y: 55.000004
-        width: 170
-        height: 110
-      alignment: 9
-      pivot: {x: 0.5, y: 0.49999994}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43e371748fda2f84e8e35bc60f0b2aa0
-      internalID: 8663756455063159393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight Foot_Right
-      rect:
-        serializedVersion: 2
-        x: 695
-        y: 55.000004
-        width: 170
-        height: 110
-      alignment: 9
-      pivot: {x: 0.5, y: 0.49999994}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9546ddd8933742c4ba293b9f6f56db8a
-      internalID: -6762616127383454453
       vertices: []
       indices: 
       edges: []
@@ -384,6 +342,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636962812619367082
+  userData: 636962875474750304
   assetBundleName: 
   assetBundleVariant: 
