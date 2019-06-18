@@ -291,12 +291,12 @@ TextureImporter:
       name: Knight Leg_Left
       rect:
         serializedVersion: 2
-        x: 473.1685
-        y: 94.42392
+        x: 472.8477
+        y: 92.89136
         width: 173.99997
         height: 274
       alignment: 9
-      pivot: {x: 0.49903175, y: 0.4948031}
+      pivot: {x: 0.5008754, y: 0.5003964}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,6 +342,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636964510724680367
+  userData: 636964579869663461
   assetBundleName: 
   assetBundleVariant: 
