@@ -135,7 +135,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    boneLength: 0.20999983
+    boneLength: 0.21000007
     path: Body2_Bone/B_Arm1_Bone
     name: B_Arm1_Bone
     color: {r: 1, g: 0, b: 0, a: 1}
