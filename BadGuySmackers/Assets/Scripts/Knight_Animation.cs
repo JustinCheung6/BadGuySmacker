@@ -19,9 +19,9 @@ public class Knight_Animation : MonoBehaviour
     private void Update()
     {
         //Direction
-        if (rb2d.velocity.x > 0f)
+        if (Input.GetAxis("Horizontal") > 0f && Mathf.Abs(rb2d.velocity.x) > 0.1f)
             anim.SetBool(Direction, true);
-        else if (rb2d.velocity.x < 0f)
+        else if (Input.GetAxis("Horizontal") < 0f && Mathf.Abs(rb2d.velocity.x) > 0.1f)
             anim.SetBool(Direction, false);
         //Moving
         if (Mathf.Abs(rb2d.velocity.x) > 0.1f)
