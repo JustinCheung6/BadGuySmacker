@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement_Base : MonoBehaviour
 {
+    [Tooltip("How fast player's velocity increases")]
+    [SerializeField] private float speed = 1f;
     [Tooltip("Max value player's velocity can move")]
     [SerializeField] private float maxSpeed = 5f;
     [Tooltip("Force added when player jumps")]
@@ -58,7 +60,7 @@ public class Movement_Base : MonoBehaviour
                 rb2d.velocity -= new Vector2(rb2d.velocity.x, 0f);
             //Move character if there is input
             else
-                rb2d.velocity += new Vector2(move * maxSpeed, 0f);
+                rb2d.velocity += new Vector2(move * speed, 0f);
         }
         //Lock the velocity to the maxspeed
         rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed), rb2d.velocity.y);
