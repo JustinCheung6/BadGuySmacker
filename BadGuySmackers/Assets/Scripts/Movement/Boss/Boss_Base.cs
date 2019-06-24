@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement_Boss : HealthIntel_Abstract
+public class Boss_Base : HealthIntel_Abstract
 {
     private BossAI[] actions;
 

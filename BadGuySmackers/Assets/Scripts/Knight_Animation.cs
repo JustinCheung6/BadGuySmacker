@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss_Base : MonoBehaviour
+public class Knight_Animation : MonoBehaviour
 {
     [SerializeField] private string Running = "Moving";
     [SerializeField] private string Direction = "FacingRight";

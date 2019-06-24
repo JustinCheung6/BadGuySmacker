@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement_Base : MonoBehaviour  
 {
+    [Header("Movement")]
     [Tooltip("How fast player's velocity increases")]
     [SerializeField] private float speed = 1f;
     [Tooltip("Max value player's velocity can move")]
