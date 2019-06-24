@@ -5,6 +5,7 @@ using System;
 
 public class Health : Health_DamageTaker_Base
 {
+    [Header("Movement")]
     [Tooltip("Maximum value character's Health can go.")]
     [SerializeField] protected float maxHealth = 100f;
     [Tooltip("Current Amount of health character has (Max value is maxHealth).")]

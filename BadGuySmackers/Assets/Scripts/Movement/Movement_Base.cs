@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement_Base : MonoBehaviour
+public class Movement_Base : MonoBehaviour  
 {
     [Tooltip("How fast player's velocity increases")]
     [SerializeField] private float speed = 1f;
@@ -21,7 +21,7 @@ public class Movement_Base : MonoBehaviour
 
     private Transform xyz;
     private Rigidbody2D rb2d;
-    private bool isGrounded = false; //Is character on the floor
+    protected bool isGrounded = false; //Is character on the floor
     const float groundcheckDist = 0.2f; //Distance for checking if there is floor (Circle cast)
 
     public bool isActivated = true; //If player allowed to move

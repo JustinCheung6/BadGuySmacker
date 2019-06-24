@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class HealthIntel_Abstract : MonoBehaviour
 {
+    [Header("Health Intel")]
     [SerializeField] protected Health owner;
 
     // Connect to owner if script enabled
