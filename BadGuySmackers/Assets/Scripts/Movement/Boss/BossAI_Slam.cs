@@ -6,9 +6,9 @@ public class BossAI_Slam : Movement_Base, BossAI
 {
     
     [Header("Boss Slam")]
-    [Tooltip("Delay that happens before the attack")]
+    [Tooltip("Delay that happens before the attack.")]
     [SerializeField] private float Startdelay;
-    [Tooltip("Delay that happens after the attack")]
+    [Tooltip("Delay that happens after the attack.")]
     [SerializeField] private float Enddelay;
     [Space(5)]
     [SerializeField] private Transform playerXYZ;
@@ -21,38 +21,24 @@ public class BossAI_Slam : Movement_Base, BossAI
         yield return new WaitForSeconds(Startdelay);
         //Get Player Position
         playerX = playerXYZ.position.x;
-        //Check where is player
-        
-        if (this.transform.position.x > playerX)
+
+        if (xyz.position.x > playerX)
             h = -1;
-        else if (this.transform.position.x < playerX)
+        else if (xyz.position.x < playerX)
             h = 1;
+
         //Jump into the air
-        Move(h, true);
-        //Wait Until Boss hits the ground before finishing
+        Move(h * speed, true);
+        
         yield return new WaitForSeconds(0.1f);
-        yield return new WaitUntil(() => isGrounded);
+        //Wait Until Boss hits the ground before finishing or if Boss passes player
+        yield return new WaitUntil(() => isGrounded || (h == -1 && xyz.position.x < playerX) || h == 1 && xyz.position.x > playerX);
         //Stop Movement
         Move(0f, false);
+        //Wait Unit Boss hits the ground if it hadn't yet
+        if(!isGrounded)
+            yield return new WaitUntil(() => isGrounded);
+
         yield return new WaitForSeconds(Enddelay);
-    }
-
-    void FixedUpdate()
-    {
-        base.FixedUpdate();
-
-        if (!isGrounded)
-        {
-            if (h == -1 && this.transform.position.x > playerX)
-                Move(h, false);
-            else if (h == -1 && this.transform.position.x < playerX)
-                Move(0f, false);
-
-            if (h == 1 && this.transform.position.x < playerX)
-                Move(h, false);
-            else if (h == 1 && this.transform.position.x > playerX)
-                Move(0f, false);
-        }
-        
     }
 }

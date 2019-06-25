@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 1802225447}
   - component: {fileID: 1802225451}
   - component: {fileID: 1802225450}
+  - component: {fileID: 1802225452}
   - component: {fileID: 1802225449}
   m_Layer: 0
   m_Name: Boss
@@ -415,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   maxSpeed: 4
-  jumpForce: 500
+  jumpForce: 800
   gravityMultiplier: 1
   fallMultiplier: 5
   airControl: 1
@@ -443,8 +444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 1802225451}
-  totalActions: 1
+  totalActions: 2
   slamScript: {fileID: 1802225449}
+  tackleScript: {fileID: 1802225452}
 --- !u!114 &1802225451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,6 +462,35 @@ MonoBehaviour:
   maxHealth: 1000
   currentHealth: 1000
   isImmune: 0
+--- !u!114 &1802225452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802225445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4416e1b52b5be42a40ced2da2f6171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxSpeed: 5
+  jumpForce: 60
+  gravityMultiplier: 2
+  fallMultiplier: 2
+  airControl: 0
+  floorMask:
+    serializedVersion: 2
+    m_Bits: 256
+  isGrounded: 0
+  isActivated: 1
+  isLocked: 0
+  Startdelay: 1
+  Enddelay: 1
+  jump: 1
+  tackleDistance: 2.2
+  playerXYZ: {fileID: 368180796}
 --- !u!1 &1863196904
 GameObject:
   m_ObjectHideFlags: 0

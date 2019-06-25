@@ -6,7 +6,7 @@ public class Movement_Base : MonoBehaviour
 {
     [Header("Movement")]
     [Tooltip("How fast player's velocity increases")]
-    [SerializeField] private float speed = 1f;
+    [SerializeField] protected float speed = 1f;
     [Tooltip("Max value player's velocity can move")]
     [SerializeField] private float maxSpeed = 5f;
     [Tooltip("Force added when player jumps")]
@@ -20,7 +20,7 @@ public class Movement_Base : MonoBehaviour
     [Tooltip("Decides what physic layers are considered floor")]
     [SerializeField] private LayerMask floorMask;
 
-    private Transform xyz;
+    protected Transform xyz;
     private Rigidbody2D rb2d;
     [SerializeField] protected bool isGrounded = false; //Is character on the floor
     const float groundcheckDist = 0.2f; //Distance for checking if there is floor (Circle cast)
