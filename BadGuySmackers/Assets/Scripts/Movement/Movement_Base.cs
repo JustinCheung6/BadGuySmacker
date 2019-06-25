@@ -22,7 +22,7 @@ public class Movement_Base : MonoBehaviour
 
     private Transform xyz;
     private Rigidbody2D rb2d;
-    protected bool isGrounded = false; //Is character on the floor
+    [SerializeField] protected bool isGrounded = false; //Is character on the floor
     const float groundcheckDist = 0.2f; //Distance for checking if there is floor (Circle cast)
 
     public bool isActivated = true; //If player allowed to move
@@ -34,7 +34,7 @@ public class Movement_Base : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         //Check if there are colliders with groundMask specified layer, and set bool true if there is
         Collider2D[] cols = Physics2D.OverlapCircleAll(xyz.position, groundcheckDist, floorMask);

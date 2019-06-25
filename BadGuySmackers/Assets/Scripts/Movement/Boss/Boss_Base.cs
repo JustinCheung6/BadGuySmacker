@@ -1,26 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Boss_Base : HealthIntel_Abstract
 {
-    private BossAI[] actions;
+    [Header("Boss Scripts")]
+    public int totalActions;
+    public BossAI_Slam slamScript; //Index 1
+
 
     private void Awake()
     {
-        actions = (BossAI[])FindObjectsOfType(typeof(BossAI));
         StartCoroutine(BossFight());
     }
-
+    
     IEnumerator BossFight()
     {
         //Get index for a random BossAI Action in the actions array
-        int i = Random.Range(0, actions.Length);
+        int i = Random.Range(1, totalActions);
         //Activate and wait for the array to finish
-        yield return StartCoroutine(actions[i].Action());
+        if(i == 1)
+            yield return StartCoroutine(slamScript.Action());
+        //Restart
         StartCoroutine(BossFight());
     }
-
+    
     protected override void DamageTransaction(object sender, float damage)
     {
 

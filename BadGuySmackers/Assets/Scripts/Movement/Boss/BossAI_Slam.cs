@@ -4,38 +4,55 @@ using UnityEngine;
 
 public class BossAI_Slam : Movement_Base, BossAI
 {
-    [Space(10)]
+    
     [Header("Boss Slam")]
     [Tooltip("Delay that happens before the attack")]
     [SerializeField] private float Startdelay;
     [Tooltip("Delay that happens after the attack")]
     [SerializeField] private float Enddelay;
-
+    [Space(5)]
     [SerializeField] private Transform playerXYZ;
+
+    [SerializeField] private float h = 0;
+    [SerializeField] private float playerX = 0;
 
     public IEnumerator Action()
     {
         yield return new WaitForSeconds(Startdelay);
-
-        //Find player
-        float playerX = playerXYZ.position.x;
+        //Get Player Position
+        playerX = playerXYZ.position.x;
         //Check where is player
-        float h = 0;
+        
         if (this.transform.position.x > playerX)
             h = -1;
         else if (this.transform.position.x < playerX)
             h = 1;
         //Jump into the air
         Move(h, true);
-
-        //Move to player while in air (Player is to the left
-        while(h == -1 && this.transform.position.x > playerX && !isGrounded)
-            Move(h, false);
-        while (h == 1 && this.transform.position.x < playerX && !isGrounded)
-            Move(h, false);
-        
         //Wait Until Boss hits the ground before finishing
+        yield return new WaitForSeconds(0.1f);
         yield return new WaitUntil(() => isGrounded);
+        //Stop Movement
+        Move(0f, false);
         yield return new WaitForSeconds(Enddelay);
+    }
+
+    void FixedUpdate()
+    {
+        base.FixedUpdate();
+
+        if (!isGrounded)
+        {
+            if (h == -1 && this.transform.position.x > playerX)
+                Move(h, false);
+            else if (h == -1 && this.transform.position.x < playerX)
+                Move(0f, false);
+
+            if (h == 1 && this.transform.position.x < playerX)
+                Move(h, false);
+            else if (h == 1 && this.transform.position.x > playerX)
+                Move(0f, false);
+        }
+        
     }
 }
