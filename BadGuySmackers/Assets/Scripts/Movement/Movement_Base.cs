@@ -22,11 +22,10 @@ public class Movement_Base : MonoBehaviour
 
     protected Transform xyz;
     private Rigidbody2D rb2d;
-    [SerializeField] protected bool isGrounded = false; //Is character on the floor
+    [HideInInspector] public bool isGrounded = false; //Is character on the floor
     const float groundcheckDist = 0.2f; //Distance for checking if there is floor (Circle cast)
 
     public bool isActivated = true; //If player allowed to move
-    public bool isLocked = false; //If player's velocity is locked
 
     private void Awake()
     {

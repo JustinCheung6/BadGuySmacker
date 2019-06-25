@@ -6,6 +6,7 @@ public class Knight_Animation : MonoBehaviour
 {
     [SerializeField] private string Running = "Moving";
     [SerializeField] private string Direction = "FacingRight";
+    [SerializeField] private string onFloor = "Grounded";
 
     private Animator anim;
     private Rigidbody2D rb2d;
@@ -28,9 +29,10 @@ public class Knight_Animation : MonoBehaviour
             anim.SetBool(Running, true);
         else
             anim.SetBool(Running, false);
-    }
-
-    private void FixedUpdate()
-    {
+        //On Floor
+        if(GetComponent<Movement_Base>().isGrounded)
+            anim.SetBool(onFloor, true);
+        else
+            anim.SetBool(onFloor, false);
     }
 }
