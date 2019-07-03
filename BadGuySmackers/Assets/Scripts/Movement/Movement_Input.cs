@@ -5,11 +5,11 @@ using UnityEngine;
 public class Movement_Input : MonoBehaviour
 {
     private bool jumpInput;
-    private Movement_Base Base;
+    private Movement_Base owner;
 
     private void Awake()
     {
-        Base = GetComponent<Movement_Base>();
+        owner = GetComponent<Movement_Base>();
     }
 
     // Read the button presses in Update so they aren't missed.
@@ -21,7 +21,7 @@ public class Movement_Input : MonoBehaviour
     {
         //Get move input
         float h = Input.GetAxis("Horizontal");
-        Base.Move(h, jumpInput);
+        owner.Move(h, jumpInput);
         jumpInput = false;
     }
 }

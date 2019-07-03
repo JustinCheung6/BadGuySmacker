@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack_Base_Animation : MonoBehaviour
+public class Attack_Base_Animation : DamageGiver
 {
-    [Tooltip("Time it takes for attakck to be charged once")]
-    [SerializeField] private float firstThreshhold = 1f;
+    [SerializeField] private float basicDamage = 100f;
+    [SerializeField] private float charge1Damage = 125f;
+    [SerializeField] private float charge2Damage = 150f;
+    [SerializeField] private float charge3Damage = 200f;
+    [SerializeField] private float dullDamage = 50f;
+    [SerializeField] private string charge1Name = "ChargeTime1";
+    [SerializeField] private string charge2Name = "ChargeTime2";
+    [SerializeField] private string charge3Name = "ChargeTime3";
+    [SerializeField] private string dullName = "DullTime";
+
     [Tooltip("Whether or not the character can Attack")]
     public bool isActivated = true;
     [Space(5)]
@@ -29,36 +37,30 @@ public class Attack_Base_Animation : MonoBehaviour
         moveScript.Move(0f, false);
         moveScript.isActivated = false;
 
-        if (chargeTime > firstThreshhold) //CHANGE THIS
-        {
-            //Play Animation
-            animator.SetTrigger(basicAttack);
-            Debug.Log("Set Animation");
-            //Set Attacking
-            isAttacking = true;
-            Debug.Log("Set Boolean");
-            //Wait until the animation plays and finishes
-            yield return new WaitForSeconds(0.3501f);
-            Debug.Log("Animation Stopped");
-            //Finish Attacking
-            isAttacking = false;
-            Debug.Log("The End");
-        }
+        //Set Damage
+        if (chargeTime < animator.GetFloat(charge1Name))
+            damageValue = basicDamage;
+        else if (chargeTime < animator.GetFloat(charge2Name))
+            damageValue = charge1Damage;
+        else if (chargeTime < animator.GetFloat(charge3Name))
+            damageValue = basicDamage;
+        else if (chargeTime < animator.GetFloat(dullName))
+            damageValue = basicDamage;
         else
-        {
-            //Play Animation
-            animator.SetTrigger(basicAttack);
-            Debug.Log("Set Animation");
-            //Set Attacking
-            isAttacking = true;
-            Debug.Log("Set Boolean");
-            //Wait until the animation plays and finishes
-            yield return new WaitForSeconds(0.3501f);
-            Debug.Log("Animation Stopped");
-            //Finish Attacking
-            isAttacking = false;
-            Debug.Log("The End");
-        }
+            damageValue = basicDamage;
+
+        //Play Animation
+        animator.SetTrigger(basicAttack);
+        Debug.Log("Set Animation");
+        //Set Attacking
+        isAttacking = true;
+        Debug.Log("Set Boolean");
+        //Wait until the animation plays and finishes
+        yield return new WaitForSeconds(0.3501f);
+        Debug.Log("Animation Stopped");
+        //Finish Attacking
+        isAttacking = false;
+        Debug.Log("The End");
 
         moveScript.isActivated = true;
     }
