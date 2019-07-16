@@ -1030,8 +1030,8 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1031869803
+  m_SortingOrder: 9
   m_BoneTransforms:
   - {fileID: 1980518722}
 --- !u!1 &640316154
@@ -1367,8 +1367,8 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1031869803
+  m_SortingOrder: 9
   m_BoneTransforms:
   - {fileID: 1980518722}
 --- !u!1 &783805189
@@ -2040,8 +2040,8 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1031869803
+  m_SortingOrder: 9
   m_BoneTransforms:
   - {fileID: 1980518722}
 --- !u!1 &1349387096
@@ -2821,8 +2821,8 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1031869803
+  m_SortingOrder: 9
   m_BoneTransforms:
   - {fileID: 1980518722}
 --- !u!1 &1851920377
@@ -3260,7 +3260,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 783805190}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4259.79}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6779.79}
 --- !u!114 &1980518723
 MonoBehaviour:
   m_ObjectHideFlags: 0
