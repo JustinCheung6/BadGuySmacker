@@ -22,7 +22,7 @@ public class Attack_Base_Animation : DamageGiver
     [Tooltip("Name for the trigger that activates the charging Animation")]
     [SerializeField] private string charging;
     [Tooltip("Name for the trigger that activates the Basic Attack animation")]
-    [SerializeField] private string basicAttack;
+    [SerializeField] private string attack;
 
     private bool isAttacking = false; //Whether or not the character is already attacking
     private bool isCharging = true;
@@ -50,7 +50,7 @@ public class Attack_Base_Animation : DamageGiver
             damageValue = basicDamage;
 
         //Play Animation
-        animator.SetTrigger(basicAttack);
+        animator.SetTrigger(attack);
         Debug.Log("Set Animation");
         //Set Attacking
         isAttacking = true;
