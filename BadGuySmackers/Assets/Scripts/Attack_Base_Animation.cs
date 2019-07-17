@@ -13,16 +13,15 @@ public class Attack_Base_Animation : DamageGiver
     [SerializeField] private string charge2Name = "ChargeTime2";
     [SerializeField] private string charge3Name = "ChargeTime3";
     [SerializeField] private string dullName = "DullTime";
+    [SerializeField] private string attackName = "attack";
 
     [Tooltip("Whether or not the character can Attack")]
     public bool isActivated = true;
     [Space(5)]
     [Header("Animations")]
     [SerializeField] private Animator animator;
-    [Tooltip("Name for the trigger that activates the charging Animation")]
-    [SerializeField] private string charging;
-    [Tooltip("Name for the trigger that activates the Basic Attack animation")]
-    [SerializeField] private string attack;
+    [Tooltip("Time attack animation takes to finish")]
+    [SerializeField] private float attackDuration = 1.3501f;
 
     private bool isAttacking = false; //Whether or not the character is already attacking
     private bool isCharging = true;
@@ -43,25 +42,19 @@ public class Attack_Base_Animation : DamageGiver
         else if (chargeTime < animator.GetFloat(charge2Name))
             damageValue = charge1Damage;
         else if (chargeTime < animator.GetFloat(charge3Name))
-            damageValue = basicDamage;
+            damageValue = charge2Damage;
         else if (chargeTime < animator.GetFloat(dullName))
-            damageValue = basicDamage;
+            damageValue = charge3Damage;
         else
-            damageValue = basicDamage;
-
-        //Play Animation
-        animator.SetTrigger(attack);
-        Debug.Log("Set Animation");
+            damageValue = dullDamage;
         //Set Attacking
         isAttacking = true;
-        Debug.Log("Set Boolean");
+        if(!(chargeTime > animator.GetFloat(dullName)))
+            animator.SetTrigger(attackName);
         //Wait until the animation plays and finishes
-        yield return new WaitForSeconds(0.3501f);
-        Debug.Log("Animation Stopped");
+        yield return new WaitForSeconds(attackDuration);
         //Finish Attacking
         isAttacking = false;
-        Debug.Log("The End");
-
         moveScript.isActivated = true;
     }
 }

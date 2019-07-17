@@ -37,13 +37,9 @@ public class Attack_Input : MonoBehaviour
         {
             StartCoroutine(owner.Attack(chargeTime));
             chargeTime = 0f;
-            move.isActivated = true;
         }
         else
-        {
             chargeTime = 0f;
-            move.isActivated = true;
-        }
 
         //Animation
         animator.SetFloat(chargeName, chargeTime);
