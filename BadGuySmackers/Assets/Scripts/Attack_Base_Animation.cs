@@ -15,23 +15,24 @@ public class Attack_Base_Animation : DamageGiver
     [SerializeField] private string dullName = "DullTime";
     [SerializeField] private string attackName = "attack";
 
-    [Tooltip("Whether or not the character can Attack")]
-    public bool isActivated = true;
     [Space(5)]
     [Header("Animations")]
     [SerializeField] private Animator animator;
     [Tooltip("Time attack animation takes to finish")]
     [SerializeField] private float attackDuration = 1.3501f;
 
-    private bool isAttacking = false; //Whether or not the character is already attacking
-    private bool isCharging = true;
+    public bool isAttacking = false; //Whether or not the character is already attacking
 
     [SerializeField] private Movement_Base moveScript;
+    [SerializeField] private BoxCollider2D boxCollider;
 
     public IEnumerator Attack(float chargeTime)
     {
-        if (!isActivated || isAttacking || !isCharging)
+        Debug.Log("Started");
+        if (isAttacking)
             yield break;
+
+        Debug.Log("1st Barrier");
         //Stop Movement
         moveScript.Move(0f, false);
         moveScript.isActivated = false;
@@ -49,12 +50,17 @@ public class Attack_Base_Animation : DamageGiver
             damageValue = dullDamage;
         //Set Attacking
         isAttacking = true;
-        if(!(chargeTime > animator.GetFloat(dullName)))
+        boxCollider.enabled = true;
+        if(chargeTime < animator.GetFloat(dullName))
+        {
             animator.SetTrigger(attackName);
+        }
         //Wait until the animation plays and finishes
         yield return new WaitForSeconds(attackDuration);
         //Finish Attacking
+        Debug.Log("No more hit");
         isAttacking = false;
+        boxCollider.enabled = false;
         moveScript.isActivated = true;
     }
 }

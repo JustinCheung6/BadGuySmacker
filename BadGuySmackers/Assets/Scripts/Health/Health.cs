@@ -11,7 +11,7 @@ public class Health : Health_DamageTaker_Base
     [Tooltip("Current Amount of health character has (Max value is maxHealth).")]
     [SerializeField] protected float currentHealth = 100f;
     [Tooltip("Whether or not the character can be hit.")]
-    [SerializeField] protected bool isImmune = false;
+    public bool isImmune = false;
     protected bool isDead = false;
 
     //Public variables for getting info from Health Base

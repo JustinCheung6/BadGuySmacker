@@ -10,7 +10,7 @@ public class DamageGiver : MonoBehaviour
     [Tooltip("Whether or not character can do damage")]
     public bool activated = true;
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
         //Check if collided object can take damage
         Health_DamageTaker_Abstract taker = col.gameObject.GetComponent<Health_DamageTaker_Abstract>();

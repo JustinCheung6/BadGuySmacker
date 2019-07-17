@@ -268,7 +268,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: ChargeTime
-    m_EventTreshold: 0.2
+    m_EventTreshold: 0.01
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8470743120580320342}
   m_Solo: 0
@@ -1688,7 +1688,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: ChargeTime
-    m_EventTreshold: 0.2
+    m_EventTreshold: 0.05
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5640347632878659911}
   m_Solo: 0

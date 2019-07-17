@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attack_Input : MonoBehaviour
 {
-    private Attack_Base_Animation owner;
+    [SerializeField] private Attack_Base_Animation owner;
     [SerializeField] private Movement_Base move;
     [SerializeField] private Animator animator;
     [SerializeField] private string chargeName = "ChargeTime";
@@ -27,21 +27,25 @@ public class Attack_Input : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (attackInput)
+        if (attackInput && owner.isAttacking == false)
         {
             move.Move(0f, false);
             move.isActivated = false;
             chargeTime += Time.fixedDeltaTime;
+            //Animation
+            animator.SetFloat(chargeName, chargeTime);
         }
         else if (!attackInput && chargeTime > 0f && move.isGrounded)
         {
+            Debug.Log("Activate");
             StartCoroutine(owner.Attack(chargeTime));
             chargeTime = 0f;
+            animator.SetFloat(chargeName, 0f);
         }
         else
+        {
             chargeTime = 0f;
-
-        //Animation
-        animator.SetFloat(chargeName, chargeTime);
+            animator.SetFloat(chargeName, 0f);
+        }
     }
 }

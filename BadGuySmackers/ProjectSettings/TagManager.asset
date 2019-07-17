@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - Floor
-  - 
-  - 
-  - 
-  - 
+  - PlayerWeapon
+  - Player
+  - Enemy
+  - EnemyWeapon
   - 
   - 
   - 
